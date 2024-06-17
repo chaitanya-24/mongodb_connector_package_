@@ -13,7 +13,7 @@ To use this class as a package on PyPI, you can follow these steps:
 
 2. **Import the Class**:
    ```python
-   from pymongo_automation import mongo_crud
+   from pymongo_automation import mongo_crud 
    ```
 
 3. **Create an Instance of the Class**: 
