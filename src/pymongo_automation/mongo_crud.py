@@ -15,7 +15,7 @@ class mongo_operation:
         self.collection_name = collection_name
 
     def create_mongo_client(self) -> MongoClient:
-        client = MongoClient(self.client_url, ssl=True)
+        client: MongoClient = MongoClient(self.client_url, ssl=True)
         return client
 
     def create_database(self) -> Any:
@@ -49,10 +49,11 @@ class mongo_operation:
         if self.path.endswith('.csv'):
             dataframe = pd.read_csv(self.path, encoding='utf-8')
         elif self.path.endswith(".xlsx"):
-            dataframe = pd.read_excel(self.path)
+            dataframe = pd.read_excel(self.path, encoding='utf-8')
         else:
             raise ValueError("Unsupported file format. Only .csv and .xlsx are supported.")
 
         datajson = json.loads(dataframe.to_json(orient='records'))
         collection = self.create_collection(collection_name)
         collection.insert_many(datajson)
+
