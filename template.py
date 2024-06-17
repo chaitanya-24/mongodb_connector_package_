@@ -1,7 +1,7 @@
 import os
 from pathlib import Path
 
-package_name = "mongoDB-python-connector"
+package_name = "pymongo_automation"
 
 list_of_files = [
    ".github/workflows/ci.yaml",
@@ -10,9 +10,9 @@ list_of_files = [
    f"src/{package_name}/mongo_crud.py", 
    "tests/__init__.py",
    "tests/unit/__init__.py",
-   "tests/unit/unit.py",
+   "tests/unit/test_unit.py",
    "tests/integration/__init__.py",
-   "tests/integration/int.py",
+   "tests/integration/test_int.py",
    "init_setup.sh",
    "requirements.txt", 
    "requirements_dev.txt",

@@ -4,9 +4,9 @@ from typing import List
 with open('README.md', 'r', encoding='utf-8') as f:
     long_description = f.read()
 
-__version__ = "0.0.1"
+__version__ = "1.0.0"
 REPO_NAME = "mongodb_connector_package_"
-PKG_NAME = "mongoDB-python-connector"
+PKG_NAME = "pymongo_automation"
 AUTHOR_USER_NAME = "chaitanya-24"
 AUTHOR_EMAIL = "csawant2407@gmail.com"
 
