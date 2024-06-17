@@ -8,12 +8,12 @@ To use this class as a package on PyPI, you can follow these steps:
 
 1. **Install the Package**:
    ```bash
-   pip install mongodb_connect
+   pip install pymongo-automation
    ```
 
 2. **Import the Class**:
    ```python
-   from mongodb_connect import mongo_crud
+   from pymongo_automation import mongo_crud
    ```
 
 3. **Create an Instance of the Class**:
